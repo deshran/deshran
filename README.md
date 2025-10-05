@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# DeshRan — Democratizing Sports Talent Assessment
 
-## Project info
+**DeshRan** is an AI-powered mobile platform designed to bridge the gap between talented athletes and professional opportunities.  
+It empowers athletes across India, especially in rural areas, to showcase their skills, receive unbiased performance analysis, and connect with coaches and scouts.
 
-**URL**: https://lovable.dev/projects/98fb2fca-fc8b-4d30-b1de-31ada0891993
+---
 
-## How can I edit this code?
+## What is DeshRan
 
-There are several ways of editing your application.
+DeshRan is an AI-based sports assessment and discovery platform built to give every athlete a fair chance to be recognized.  
+It allows athletes to record short videos of their performance, which are then analyzed by machine learning models to provide objective feedback.  
+These athletes can then create digital portfolios and get discovered by coaches, scouts, and sports organizations.
 
-**Use Lovable**
+The platform is being developed as part of **Smart India Hackathon (SIH)** by **Team Khel Vikas**.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/98fb2fca-fc8b-4d30-b1de-31ada0891993) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Why We Built It
 
-**Use your preferred IDE**
+India has immense untapped sports talent, but many skilled athletes remain unnoticed due to:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Limited access to professional coaching and scouting  
+- Geographical and financial barriers  
+- Subjective and inconsistent assessment methods  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+DeshRan was created to democratize sports talent assessment through accessible, AI-driven, and data-backed tools.  
+Our mission is simple:  
+To make sports talent recognition fair, inclusive, and accessible to everyone.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Key Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+| Feature | Description |
+|----------|-------------|
+| AI Video Analysis | Athletes upload or record short videos of their performance. The AI analyzes their technique, speed, and form to give objective feedback. |
+| Athlete Profile Builder | Create a digital sports portfolio with videos, stats, and achievements to share with scouts and coaches. |
+| Coach & Scout Dashboard | Enables coaches to monitor athlete progress and shortlist promising talent based on data insights. |
+| Personalized Training Plans | AI-generated recommendations for drills, fitness routines, and nutrition that evolve as the athlete improves. |
+| Inclusive Design | Optimized for low-connectivity regions and supports multiple Indian languages. |
+| Community & Recognition | Builds a connected ecosystem of athletes, coaches, and sports authorities to promote recognition and collaboration. |
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## The Vision
 
-**Edit a file directly in GitHub**
+DeshRan aims to become the national platform for discovering and nurturing sports talent from every corner of India.  
+By combining artificial intelligence, accessibility, and data transparency, it redefines how talent is recognized and developed.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Team Khel Vikas
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Name | Role |
+|------|------|
+| Shyam Sathish | Team Lead - ML Engineer & AI Integration |
+| Siddharth Balakrishnan | DevOps & Management|
+| Sugan | Backend and AI Route Integration |
+| Sathya | Frontend Engineer |
+| Sri Nithi Murali | ML Engineer & Data Analytics |
+| Vivedha A | Support Engineer & Integration |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Contact
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+For collaborations, feedback, or partnerships:
 
-## How can I deploy this project?
+- Website: [https://deshran.tech](https://deshran.tech)  
+- Email: teamkhelvikas@gmail.com  
 
-Simply open [Lovable](https://lovable.dev/projects/98fb2fca-fc8b-4d30-b1de-31ada0891993) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Built by Team Khel Vikas for Smart India Hackathon 2025**
