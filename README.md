@@ -67,7 +67,7 @@ By combining artificial intelligence, accessibility, and data transparency, it r
 For collaborations, feedback, or partnerships:
 
 - Website: [https://deshran.tech](https://deshran.tech)  
-- Email: teamkhelvikas@gmail.com  
+- Email: deshrankhelvikas@gmail.com  
 
 ---
 
