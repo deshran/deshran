@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 100% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 100% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 100% 25%;
+
+    /* Indian Flag Colors - Saffron */
+    --primary: 26 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Indian Flag Colors - Green */
+    --secondary: 136 88% 27%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Indian Flag Colors - Navy Blue */
+    --accent: 240 100% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 240 10% 96%;
+    --muted-foreground: 240 5% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 90%;
+    --input: 240 10% 90%;
+    --ring: 26 100% 60%;
+
+    --radius: 1rem;
+
+    /* Glassmorphism */
+    --glass-bg: 0 0% 100% / 0.7;
+    --glass-border: 0 0% 100% / 0.2;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(26 100% 60% / 0.2), hsl(136 88% 27% / 0.2), hsl(240 100% 25% / 0.2));
+    --gradient-card: linear-gradient(135deg, hsl(26 100% 60% / 0.05), hsl(240 100% 25% / 0.05));
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 100% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 100% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 100% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 26 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 136 88% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 240 100% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 240 20% 15%;
+    --muted-foreground: 240 10% 65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 20% 20%;
+    --input: 240 20% 20%;
+    --ring: 26 100% 60%;
+
+    --glass-bg: 240 100% 10% / 0.7;
+    --glass-border: 0 0% 100% / 0.1;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
