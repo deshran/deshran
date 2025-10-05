@@ -10,6 +10,8 @@ export default defineConfig(({ mode }) => ({
     allowedHosts: [
       "deshran-landing-nd5fp.ondigitalocean.app", // your DO host
       "localhost",
+      "deshran.tech",
+      "www.deshran.tech",
       "127.0.0.1",
     ],
   },
