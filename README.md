@@ -5,6 +5,12 @@ It empowers athletes across India, especially in rural areas, to showcase their 
 
 ---
 
+## Demo Video
+
+[![DeshRan Demo Video](https://img.youtube.com/vi/vQrqP6C-zmA/maxresdefault.jpg)](https://youtu.be/vQrqP6C-zmA "Click to watch the demo on YouTube")
+
+---
+
 ## What is DeshRan
 
 DeshRan is an AI-based sports assessment and discovery platform built to give every athlete a fair chance to be recognized.  
