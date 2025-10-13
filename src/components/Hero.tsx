@@ -52,7 +52,7 @@ const Hero = () => {
                 className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-full px-8 py-6 text-lg"
                 asChild
               >
-                <a href="https://deshran-ui-6e71e306734c.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://deshran-ui-6e71e306734c.herokuapp.com/landing" target="_blank" rel="noopener noreferrer">
                   Try Web Version
                 </a>
               </Button>
