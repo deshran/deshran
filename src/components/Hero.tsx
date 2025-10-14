@@ -53,7 +53,7 @@ const Hero = () => {
                 asChild
               >
                 <a href="https://deshran-ui-6e71e306734c.herokuapp.com/landing" target="_blank" rel="noopener noreferrer">
-                  Try Web Version
+                  View Demo
                 </a>
               </Button>
             </div>
