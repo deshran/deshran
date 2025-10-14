@@ -32,7 +32,7 @@ const CTA = () => {
               className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-full px-10 py-7 text-lg group"
               asChild
             >
-              <a href="https://deshran-ui-6e71e306734c.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://deshran-ui-6e71e306734c.herokuapp.com/landing" target="_blank" rel="noopener noreferrer">
                 View Demo
                 <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
