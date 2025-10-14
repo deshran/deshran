@@ -11,7 +11,7 @@ const Footer = () => {
             <div>
               <div className="font-bold text-foreground text-lg">DeshRan</div>
               <div className="text-sm text-muted-foreground">Democratizing Sports Talent</div>
-              <div className="text-sm text-muted-foreground">With love from Team Khel Vikas</div>
+              <div className="text-sm text-muted-foreground">♡ With love from Team Khel Vikas ♡ </div>
               <div className="text-sm text-muted-foreground">©2025 Deshran</div>
             </div>
           </div>
