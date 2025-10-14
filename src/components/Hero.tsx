@@ -1,27 +1,51 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Smartphone, ArrowRight } from "lucide-react";
 import deshranLogo from "@/assets/deshran-logo.png";
 import phoneMockup from "@/assets/phone-mockup.png";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const Hero = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isDemoDialogOpen, setIsDemoDialogOpen] = useState(false);
+
+  const handleContinue = () => {
+    setIsDemoDialogOpen(false);
+    window.open("https://deshran-ui-6e71e306734c.herokuapp.com/landing", "_blank");
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10" />
-      
+
       {/* Animated Floating Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-      
+      <div
+        className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "1s" }}
+      />
+
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left animate-fade-in">
             {/* Logo */}
             <div className="mb-8 flex justify-center lg:justify-start">
-              <img src={deshranLogo} alt="DeshRan Logo" className="w-32 h-32 md:w-40 md:h-40 animate-float" />
+              <img
+                src={deshranLogo}
+                alt="DeshRan Logo"
+                className="w-32 h-32 md:w-40 md:h-40 animate-float"
+              />
             </div>
-            
+
             {/* Headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
               Democratizing Sports
@@ -30,34 +54,81 @@ const Hero = () => {
                 Talent Assessment
               </span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
               Offline AI-powered talent assessment. Fair, unbiased, and accessible to every athlete across India.
             </p>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg shadow-2xl shadow-primary/30 group"
-              >
-                <Smartphone className="mr-2 h-5 w-5" />
-                Download App
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-full px-8 py-6 text-lg"
-                asChild
-              >
-                <a href="https://deshran-ui-6e71e306734c.herokuapp.com/landing" target="_blank" rel="noopener noreferrer">
-                  View Demo
-                </a>
-              </Button>
+              {/* Download Button with Popup */}
+              <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                <DialogTrigger asChild>
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg shadow-2xl shadow-primary/30 group"
+                  >
+                    <Smartphone className="mr-2 h-5 w-5" />
+                    Download App
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="text-center">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-semibold">
+                      Coming Soon 
+                    </DialogTitle>
+                    <DialogDescription className="text-base mt-2">
+                      This product is currently in development.<br />
+                      Stay tuned for the official launch on Play Store & App Store!
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+
+              {/* View Demo Button with Confirmation Popup */}
+              <Dialog open={isDemoDialogOpen} onOpenChange={setIsDemoDialogOpen}>
+                <DialogTrigger asChild>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-full px-8 py-6 text-lg"
+                  >
+                    View Demo
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="text-center">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-semibold">
+                      Beta Build Notice 
+                    </DialogTitle>
+                    <DialogDescription className="text-base mt-2 leading-relaxed">
+                      You are about to access an <b>in-development beta build</b>.<br />
+                      Some features may not work as intended.<br />
+                      For any queries, contact: <br />
+                      <span className="text-accent font-medium">deshrankhelvikas@gmail.com</span>
+                    </DialogDescription>
+                  </DialogHeader>
+
+                  <div className="mt-6 flex justify-center gap-4">
+                    <Button
+                      variant="outline"
+                      onClick={() => setIsDemoDialogOpen(false)}
+                      className="px-6"
+                    >
+                      Go Back
+                    </Button>
+                    <Button
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 px-6"
+                      onClick={handleContinue}
+                    >
+                      Continue
+                    </Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div>
@@ -78,14 +149,17 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Right Phone Mockup */}
-          <div className="flex justify-center lg:justify-end items-start animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="flex justify-center lg:justify-end items-start animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-[3rem] blur-3xl animate-pulse" />
-              <img 
-                src={phoneMockup} 
-                alt="DeshRan App Interface" 
+              <img
+                src={phoneMockup}
+                alt="DeshRan App Interface"
                 className="relative z-10 w-64 md:w-72 lg:w-80 drop-shadow-2xl animate-float"
               />
             </div>
