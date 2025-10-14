@@ -33,7 +33,7 @@ const CTA = () => {
               asChild
             >
               <a href="https://deshran-ui-6e71e306734c.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                Try Web App
+                View Demo
                 <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
             </Button>
