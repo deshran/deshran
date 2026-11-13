@@ -13,7 +13,7 @@ import {
 const CTA = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const handleContinue = () => {
-    window.open("https://deshran-ui-6e71e306734c.herokuapp.com/landing", "_blank");
+    window.open("https://deshran.github.io/demo/#/", "_blank");
     setIsDialogOpen(false);
   };
 
