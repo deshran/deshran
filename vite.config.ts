@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
       "127.0.0.1",
     ],
   },
-  base: "/",
+  base: "/deshran/",
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {

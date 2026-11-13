@@ -18,7 +18,7 @@ const Hero = () => {
 
   const handleContinue = () => {
     setIsDemoDialogOpen(false);
-    window.open("https://deshran-ui-6e71e306734c.herokuapp.com/landing", "_blank");
+    window.open("https://deshran.github.io/demo/#/", "_blank");
   };
 
   return (
